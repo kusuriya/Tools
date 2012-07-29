@@ -1,4 +1,4 @@
-#!env python
+#!/usr/bin/env python
 import sys;
 import os;
 
@@ -15,4 +15,5 @@ ytvid = sys.argv[1];
 vid = videoplayer + " " + vidplayerargs + " " + "$(" + ytdl + " " + ytdlargs + " " + "'" + ytvid + "')";
 
 #execute
+print("starting"+ytvid);
 os.system(vid);
