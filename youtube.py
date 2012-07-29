@@ -4,9 +4,9 @@ import os;
 
 #Config
 videoplayer = "/usr/local/bin/mplayer";
-vidplayerargs = '-zoom -cache 1024 -autosync 30 -nobps -ni -forceidx -mc 0 -framedrop';
-ytdl = "/usr/local/bin/youtube-dl --cookies /tmp/cookies.txt -t";
-ytdlargs = '-g --max-quality 44';
+vidplayerargs = '-zoom -cache 1024 -autosync 30 -nobps -ni -forceidx -mc 0 -framedrop -y 480 -x 845';
+ytdl = "/usr/local/bin/youtube-dl --cookies /tmp/cookies.txt -t --max-quality 34";
+ytdlargs = '-g';
 
 #Commandline Var
 ytvid = sys.argv[1];
