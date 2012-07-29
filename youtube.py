@@ -4,16 +4,16 @@ import os;
 
 #Config
 videoplayer = "/usr/local/bin/mplayer";
-vidplayerargs = '-zoom -cache 1024 -vo x11';
-ytdl = "/usr/local/bin/youtube-dl";
-ytdlargs = ' -g ';
+vidplayerargs = '-zoom -cache 1024 -autosync 30 -nobps -ni -forceidx -mc 0 -framedrop';
+ytdl = "/usr/local/bin/youtube-dl --cookies /tmp/cookies.txt -t";
+ytdlargs = '-g --max-quality 44';
 
 #Commandline Var
 ytvid = sys.argv[1];
 
 #build command
-vid = videoplayer + " " + vidplayerargs + " " + "$(" + ytdl + " " + ytdlargs + " " + "'" + ytvid + "')";
+vid = videoplayer + " " + vidplayerargs + " " + "$(" + ytdl + " " + ytdlargs + " " + "\"" + ytvid + "\")";
 
 #execute
-print("starting "+ytvid);
+print("starting "+vid);
 os.system(vid);
