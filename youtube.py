@@ -8,6 +8,15 @@ vidplayerargs = '-zoom -cache 1024 -autosync 30 -nobps -ni -forceidx -mc 0 -fram
 ytdl = "/usr/local/bin/youtube-dl --cookies /tmp/cookies.txt -t --max-quality 34";
 ytdlargs = '-g';
 
+##############
+# User, What r u doing?
+# USER, STALP!
+#
+# Do not change anything
+# below this line unless
+# you really understand what
+# you are doing
+###############
 #Commandline Var
 ytvid = sys.argv[1];
 
