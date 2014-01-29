@@ -24,5 +24,5 @@ ytvid = sys.argv[1];
 vid = videoplayer + " " + vidplayerargs + " " + "$(" + ytdl + " " + ytdlargs + " " + "\"" + ytvid + "\")";
 
 #execute
-print("starting "+vid);
+print("Starting: "+vid);
 os.system(vid);
